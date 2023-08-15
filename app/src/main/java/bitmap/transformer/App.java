@@ -4,50 +4,13 @@
 package bitmap.transformer;
 
 import java.io.File;
-import java.io.IOException;
 
 public class App {
 
     //  String inputFilePath = app/src/main/resources/imageBmp.bmp
     //  String outputFilePath = app/src/main/resources/imageBmp2.bmp
     public static void main(String[] args) {
-
-//        String[] argss = {"app/src/main/resources/imageBmp.bmp", "app/src/main/resources/imageBmp2.bmp", "convertImageToGray"};
-
-//          String outputFilePath = "app/src/main/resources/imageBmp2.bmp";
-
-
-//        if (args.length == 3) {
-//            String inputFilePath = args[0];
-//            String outputFilePath = args[1];
-//
-//
-//            Bitmap bitMap = new Bitmap(inputFilePath);
-//
-//
-//            if (args[2].equals("convertImageToGray")) {
-//                bitMap.convertImageToGray();
-//            }
-//            if (args[2].equals("mirrorImageVertically")) {
-//                bitMap.mirrorImageVertically();
-//            }
-//            if (args[2].equals("mirrorImageHorizontally")) {
-//                bitMap.mirrorImageHorizontally();
-//            }
-//
-//            bitMap.writeNewImage(outputFilePath);
-//
-//             System.out.println(checkIfCreated(outputFilePath));
-//
-////            checkIfCreated(outputFilePath);
-//        }
-//
-//        else {
-//            System.out.println("Invalid args!!");
-//        }
-
         System.out.println(testFunction(args));
-
     }
 
     public static String testFunction(String[] argsPar){
