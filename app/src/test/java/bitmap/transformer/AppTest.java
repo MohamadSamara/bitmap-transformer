@@ -4,8 +4,39 @@
 package bitmap.transformer;
 
 import org.junit.jupiter.api.Test;
+import java.io.IOException;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
 
+//    @Test
+//    public void testApp() {
+//        // Arrange
+//        String inputFilePath = "app/src/main/resources/imageBmp.bmp";
+//        String outputFilePath = "app/src/main/resources/imageBmp2.bmp";
+//        String[] args = {"app/src/main/resources/imageBmp.bmp", "app/src/main/resources/imageBmp2.bmp", "convertImageToGray"};
+//
+//
+//        String result = App.testFunction(args);
+//
+//        // Assert: Check if the image was created as expected
+//        assertEquals("Done .. New image saved to " + outputFilePath, result);
+//    }
+
+    @Test public void testIfCreateNewImage(){
+        String inputFilePath = "app/src/main/resources/imageBmp.bmp";
+        String outputFilePath = "app/src/main/resources/imageBmp2.bmp";
+        String x = "convertImageToGray";
+
+        //outputFilePath
+        App sut = new App();
+
+        App.testFunction(new String[]{inputFilePath,outputFilePath,x});
+
+        String y = App.checkIfCreated(outputFilePath);
+
+        assertEquals("Done .. New image saved to " + outputFilePath , x);
+    }
 }
+
