@@ -54,4 +54,3 @@ Convert an image to grayscale:
 
 - This project was inspired by the need to apply simple bitmap image transformations.
 - Special thanks to the creators and maintainers of Java, Gradle, and the Java ImageIO library.
-- Feel free to contribute and improve this project!
